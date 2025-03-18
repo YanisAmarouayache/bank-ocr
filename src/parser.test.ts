@@ -16,8 +16,8 @@ describe('parseDigit', () => {
     test('Given invalid digit patterns, when parsed, then return "?"', () => {
         // Given
         const line1 = "invalid";
-        const line2 = "pattern";
-        const line3 = "here   ";
+        const line2 = "invalid";
+        const line3 = "invalid";
 
         // When / Then
         expect(parseDigit(line1, line2, line3, 0)).toBe('?');
